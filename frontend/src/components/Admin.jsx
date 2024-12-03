@@ -3,6 +3,7 @@ import Axios from "axios";
 import "bootstrap/dist/css/bootstrap.min.css";
 import Swal from "sweetalert2";
 import { useNavigate } from "react-router-dom";
+import "bootstrap-icons/font/bootstrap-icons.css";
 
 function Admin() {
     const [nombre, setNombre] = useState("");
@@ -168,7 +169,7 @@ function Admin() {
               />
             </div>
             <div className="input-group mb-3">
-              <span className="input-group-text">Edad</span>
+              <span className="input-group-text px-4">Edad</span>
               <input
                 type="number"
                 onChange={(e) => setEdad(e.target.value)}
@@ -178,7 +179,7 @@ function Admin() {
               />
             </div>
             <div className="input-group mb-3">
-              <span className="input-group-text">País</span>
+              <span className="input-group-text" style={{padding: "0px 28px 0px 28px"}}>País</span>
               <input
                 type="text"
                 onChange={(e) => setPais(e.target.value)}
@@ -188,7 +189,7 @@ function Admin() {
               />
             </div>
             <div className="input-group mb-3">
-              <span className="input-group-text">Email</span>
+              <span className="input-group-text" style={{padding: "0px 23px 0px 23px"}}>Email</span>
               <input
                 type="email"
                 onChange={(e) => setEmail(e.target.value)}
@@ -235,12 +236,12 @@ function Admin() {
                 <td>{empleado.pais}</td>
                 <td>{empleado.email}</td>
                 <td>
-                  <div className="btn-group">
-                    <button className="btn btn-info" onClick={() => editarEpleados(empleado)}>
-                      Editar
+                  <div>
+                    <button className="btn btn-info mx-2" onClick={() => editarEpleados(empleado)}>
+                      Editar <i class="bi bi-pencil-square"></i>
                     </button>
                     <button className="btn btn-danger" onClick={() => EliminarDatos(empleado)}>
-                      Eliminar
+                      Eliminar <i className="bi bi-trash"></i>
                     </button>
                   </div>
                 </td>
