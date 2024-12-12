@@ -33,7 +33,7 @@ function Admin() {
           limpiarCampos();
           Swal.fire({
             title: "<strong>Registro Exitoso</strong>",
-            html: `<i>El empleado <strong>${nombre} ${apellido}</strong> fue creado con éxito!!!</i>`,
+            html: `<i>El usuario <strong>${nombre} ${apellido}</strong> fue creado con éxito!!!</i>`,
             icon: "success",
             timer: 3000,
           });
@@ -42,7 +42,7 @@ function Admin() {
           Swal.fire({
             icon: "error",
             title: "Oops...",
-            text: "No se logró crear el Empleado!",
+            text: "No se logró crear el usuario!",
             footer: error.message,
           });
         });
@@ -139,12 +139,7 @@ function Admin() {
     }
   
     return (
-      <div className="container">
-        <div className="d-flex justify-content-center">
-          <button className="btn btn-secondary mt-3 mb-3" onClick={() => navigate("/")}>
-            Volver a Inicio
-          </button>
-        </div>
+      <div className="container mt-5">
         <div className="card text-center">
           <div className="card-header"><h3>Usuarios Suscriptos</h3></div>
           <div className="card-body">
@@ -238,7 +233,7 @@ function Admin() {
                 <td>
                   <div>
                     <button className="btn btn-info mx-2" onClick={() => editarEpleados(empleado)}>
-                      Editar <i class="bi bi-pencil-square"></i>
+                      Editar <i className="bi bi-pencil-square"></i>
                     </button>
                     <button className="btn btn-danger" onClick={() => EliminarDatos(empleado)}>
                       Eliminar <i className="bi bi-trash"></i>
