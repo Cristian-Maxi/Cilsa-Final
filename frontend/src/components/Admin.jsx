@@ -61,7 +61,7 @@ function Admin() {
       setEdad(empleado.edad);
       setPais(empleado.pais);
       setEmail(empleado.email);
-      setId(empleado.id_empleado);
+      setId(empleado.id_usuario);
     }
   
     function ActualizarDatos() {
@@ -71,7 +71,7 @@ function Admin() {
         edad: edad,
         pais: pais,
         email: email,
-        id_empleado: id,
+        id_usuario: id,
       })
         .then(() => {
           setEditar(false);
@@ -105,7 +105,7 @@ function Admin() {
         confirmButtonText: "Sí, Eliminarlo!",
       }).then((result) => {
         if (result.isConfirmed) {
-          Axios.delete(`http://localhost:8080/delete/${empleado.id_empleado}`)
+          Axios.delete(`http://localhost:8080/delete/${empleado.id_usuario}`)
             .then(() => {
               setEditar(false);
               ListaEmpleados();
@@ -224,7 +224,7 @@ function Admin() {
           </thead>
           <tbody>
             {listarEpleados.map((empleado) => (
-              <tr key={empleado.id_empleado}>
+              <tr key={empleado.id_usuario}>
                 <td>{empleado.nombre}</td>
                 <td>{empleado.apellido}</td>
                 <td>{empleado.edad}</td>
