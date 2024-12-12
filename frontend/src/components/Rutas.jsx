@@ -7,6 +7,7 @@ import Instrumentos from "../pages/Instrumentos/Instrumentos"
 import Contacto from "../pages/Contacto/Contacto"
 import Nosotros from "../pages/Nosotros/Nosotros"
 
+
 function Rutas() {
   return (
     <Routes>
