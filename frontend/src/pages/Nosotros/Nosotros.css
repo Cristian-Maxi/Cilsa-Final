@@ -1,0 +1,38 @@
+.nosotros-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 30px;
+    background-color: #BAC7A7;
+    font-family: 'Arial', sans-serif;
+  }
+  
+  .nosotros-title {
+    font-size: 4rem;
+    color: #698474;
+    margin-bottom: 25px;
+    text-align: center;
+    font-weight: 700;
+  }
+  
+  .nosotros-content {
+    max-width: 900px;
+    margin-bottom: 40px;
+    line-height: 1.8;
+    font-size: 1.3rem;
+    color: #555;
+    text-align: justify;
+  }
+  
+  .nosotros-content ul {
+    margin-top: 15px;
+    padding-left: 20px;
+  }
+  
+  .nosotros-content li {
+    margin-bottom: 15px;
+  }
+  
+ 
+  
+  

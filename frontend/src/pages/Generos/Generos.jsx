@@ -1,5 +1,13 @@
 import React from 'react';
 import './Generos.css';
+import rock from '../../assets/rockandroll.jpeg'
+import blues from '../../assets/blues.jpeg'
+import jazz from '../../assets/jazz.jpeg'
+import pop from '../../assets/pop.jpeg'
+import reggaeton from '../../assets/reggaeton.jpeg'
+import hip from '../../assets/hiphop.jpeg'
+import electronica from '../../assets/electronica.jpeg'
+import clasica from '../../assets/clasica.jpeg'
 
 const Generos = () => {
   return (
@@ -15,7 +23,7 @@ const Generos = () => {
             El rock es un género musical que comenzó en la década de 1950 en los Estados Unidos. Se caracteriza por el uso de guitarras eléctricas, batería fuerte y letras que a menudo abordan temas sociales y emocionales. Subgéneros incluyen el rock clásico, el punk y el grunge.
           </p>
           <img 
-            src="https://via.placeholder.com/400x250" 
+            src={rock} 
             alt="Rock"
             className="genre-image rock-image"
           />
@@ -27,7 +35,7 @@ const Generos = () => {
             El jazz es un género musical originado en Nueva Orleans a principios del siglo XX. Se caracteriza por la improvisación, el uso de acordes complejos y el ritmo sincopado. Los músicos de jazz a menudo improvisan sobre las progresiones armónicas, lo que da lugar a performances únicas.
           </p>
           <img 
-            src="https://via.placeholder.com/400x250" 
+            src={jazz}
             alt="Jazz"
             className="genre-image jazz-image"
           />
@@ -39,7 +47,7 @@ const Generos = () => {
             El hip-hop nació en los barrios de Nueva York en la década de 1970. Es un género que se caracteriza por el uso de rimas, ritmos de percusión y bases electrónicas. El rap, uno de los componentes principales del hip-hop, es utilizado para contar historias, reflexionar sobre temas sociales o expresar emociones.
           </p>
           <img 
-            src="https://via.placeholder.com/400x250" 
+            src={hip}
             alt="Hip-Hop"
             className="genre-image hiphop-image"
           />
@@ -51,7 +59,7 @@ const Generos = () => {
             La música electrónica abarca una amplia gama de estilos que emplean sonidos sintetizados, producidos por instrumentos electrónicos. Popular en discotecas y festivales, sus subgéneros incluyen house, techno, trance y dubstep, y se caracteriza por beats repetitivos y efectos sonoros.
           </p>
           <img 
-            src="https://via.placeholder.com/400x250" 
+            src={electronica}
             alt="Electrónica"
             className="genre-image electronic-image"
           />
@@ -63,7 +71,7 @@ const Generos = () => {
             La música pop es un género de música popular que abarca una variedad de estilos musicales. Se caracteriza por su accesibilidad, estructuras simples y estribillos pegajosos. Artistas como Michael Jackson y Madonna han sido exponentes del pop mundialmente conocidos.
           </p>
           <img 
-            src="https://via.placeholder.com/400x250" 
+            src={pop}
             alt="Pop"
             className="genre-image pop-image"
           />
@@ -75,7 +83,7 @@ const Generos = () => {
             El reggaeton es un género que se originó en Puerto Rico en los años 90, fusionando elementos de hip-hop, dancehall y música latina. Se caracteriza por su ritmo pegajoso y letras sobre la fiesta, el amor y la vida urbana. Artistas como Daddy Yankee y J Balvin han popularizado este género a nivel mundial.
           </p>
           <img 
-            src="https://via.placeholder.com/400x250" 
+            src={reggaeton}
             alt="Reggaeton"
             className="genre-image reggaeton-image"
           />
@@ -87,7 +95,7 @@ const Generos = () => {
             El blues es un género musical originado en el sur de los Estados Unidos. Su estructura armónica básica, que utiliza la "blues scale", se caracteriza por la repetición y la expresión emocional a través de la voz y la guitarra. Artistas como B.B. King y Muddy Waters son considerados pioneros de este estilo.
           </p>
           <img 
-            src="https://via.placeholder.com/400x250" 
+            src={blues}
             alt="Blues"
             className="genre-image blues-image"
           />
@@ -99,7 +107,7 @@ const Generos = () => {
             La música clásica es un género que se desarrolló principalmente en Europa desde el siglo XVII. Compositores como Beethoven, Mozart y Bach crearon obras que siguen siendo interpretadas hoy en día. El género abarca sinfonías, conciertos y música de cámara con una amplia orquestación.
           </p>
           <img 
-            src="https://via.placeholder.com/400x250" 
+            src={clasica}
             alt="Clásica"
             className="genre-image classical-image"
           />
