@@ -1,6 +1,8 @@
 # Cilsa-Final
 
-Aplicación Web destinada a la compra de productos electronicos "gamers", creada usando HTML, CSS, Javascript y Bootstrap por ahora. Continuaremos expandiendo este proyecto constantemente con la finalidad de crear un proyecto Full Stack.
+Nuestra aplicación web está diseñada para los apasionados de la música y los instrumentos musicales, ofreciendo una experiencia enriquecedora y educativa. A través de nuestra plataforma, los usuarios podrán explorar una vasta colección de información sobre instrumentos musicales. Ya sea que seas un músico experimentado, un estudiante o simplemente un curioso, nuestra plataforma está diseñada para inspirar y ampliar tu conocimiento musical.
+
+Documentación: https://drive.google.com/drive/folders/1F2Kn_emhm4eqrl3sf649IDwlzBcLJls-?usp=sharing
 
 <hr/>
 
