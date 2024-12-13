@@ -30,6 +30,17 @@ const NewsLetter = () => {
 
   function EnviarDatos(e) {
     e.preventDefault();
+  
+    // Validar campos vacíos
+    if (!nombre || !apellido || !edad || !pais || !email) {
+      Swal.fire({
+        icon: "warning",
+        title: "Faltan Datos",
+        text: "Por favor, completa todos los campos antes de enviar.",
+      });
+      return;
+    }
+  
     Axios.post("http://localhost:8080/create", {
       nombre: nombre,
       apellido: apellido,
@@ -50,7 +61,7 @@ const NewsLetter = () => {
         Swal.fire({
           icon: "error",
           title: "Oops...",
-          text: "Ocurrio un Error",
+          text: "Ocurrió un Error",
           footer: error.message,
         });
       });
